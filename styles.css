@@ -12,6 +12,16 @@ body {
   padding-top: 40px;
 }
 
+/* Genericos */
+.button-link {
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Header */
 .header {
   background-color: #0f5e5e;
@@ -45,12 +55,6 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   padding: 16px;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-}
-
-.header__link:hover {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Section Card */
@@ -109,11 +113,30 @@ body {
   overflow: hidden;
 }
 
+.perfil__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil__etiqueta {
+  color: #8a8a8a;
+}
+
 .perfil__nombre {
   display: flex;
   justify-content: center;
   font-size: 24px;
   font-weight: 400;
+}
+
+.perfil__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 .perfil__image {

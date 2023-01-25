@@ -17,13 +17,13 @@
     <header class="header">
       <nav class="header__nav">
         <ul class="header__lista">
-          <li class="header__item">
+          <li class="header__item button-link">
             <a href="#perfil" class="header__link">Perfil</a>
           </li>
-          <li class="header__item">
+          <li class="header__item button-link">
             <a href="#experiencia" class="header__link">Experiencia</a>
           </li>
-          <li class="header__item">
+          <li class="header__item button-link">
             <a href="#habilidades" class="header__link">Habilidades</a>
           </li>
         </ul>
@@ -35,26 +35,62 @@
           <div class="perfil__foto">
             <img src="https://randomuser.me/api/portraits/women/26.jpg" />
           </div>
-          <h2 class="perfil__nombre">Misty Bryant</h2>
+          <div class="perfil__content-wrapper">
+            <p id="etiqueta" class="perfil__etiqueta">Mi nombre es:</p>
+            <h2 id="nombre" class="perfil__nombre">Misty Bryant</h2>
+          </div>
           <ul class="section__container_list">
             <li class="section__list__item">
-              <img src="images/perfil.svg" alt="" class="perfil__image" />
+              <button
+                class="perfil__button button-link"
+                onclick="mostrarNombre()"
+              >
+                <img src="images/perfil.svg" alt="" class="perfil__image" />
+              </button>
             </li>
             <li class="section__list__item">
-              <img src="images/mail.svg" alt="" class="perfil__image" />
+              <button
+                class="perfil__button button-link"
+                onclick="mostrarMail()"
+              >
+                <img src="images/mail.svg" alt="" class="perfil__image" />
+              </button>
             </li>
             <li class="section__list__item">
-              <img
-                src="images/calendar-solid.svg"
-                alt=""
-                class="perfil__image"
-              />
+              <button
+                class="perfil__button button-link"
+                onclick="mostrarCumpleanos()"
+              >
+                <img
+                  src="images/calendar-solid.svg"
+                  alt=""
+                  class="perfil__image"
+                />
+              </button>
             </li>
             <li class="section__list__item">
-              <img src="images/map-location.svg" alt="" class="perfil__image" />
+              <button
+                class="perfil__button button-link"
+                onclick="mostrarLocalizacion()"
+              >
+                <img
+                  src="images/map-location.svg"
+                  alt=""
+                  class="perfil__image"
+                />
+              </button>
             </li>
             <li class="section__list__item">
-              <img src="images/phone-solid.svg" alt="" class="perfil__image" />
+              <button
+                class="perfil__button button-link"
+                onclick="mostrarTelefono()"
+              >
+                <img
+                  src="images/phone-solid.svg"
+                  alt=""
+                  class="perfil__image"
+                />
+              </button>
             </li>
           </ul>
         </div>
@@ -68,8 +104,8 @@
               <p class="experiencia__detalle">Buenos Aires, Argentina</p>
             </div>
             <div class="experiencia__col">
-              <h4 class="experiencia__empresa">Nombre de la empresa</h4>
-              <h5 class="experiencia__cargo">Cargo ocupado</h5>
+              <h4 class="experiencia__empresa">Shadow Fx</h4>
+              <h5 class="experiencia__cargo">Software Development Engineer</h5>
               <p class="experiencia__tareas">Tareas Realizadas:</p>
               <p class="experiencia__tareas">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -87,8 +123,26 @@
               <p class="experiencia__detalle">Buenos Aires, Argentina</p>
             </div>
             <div class="experiencia__col">
-              <h4 class="experiencia__empresa">Nombre de la empresa</h4>
-              <h5 class="experiencia__cargo">Cargo ocupado</h5>
+              <h4 class="experiencia__empresa">Axiom Developer</h4>
+              <h5 class="experiencia__cargo">Full Stack Developer</h5>
+              <p class="experiencia__tareas">Tareas Realizadas:</p>
+              <p class="experiencia__tareas">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                dignissim dictum purus ac laoreet. Mauris vitae leo sem. Aenean
+                in efficitur augue. Fusce nec enim vel diam pellentesque luctus.
+                Vestibulum pellentesque euismod ipsum id tincidunt.
+              </p>
+              <p class="experiencia__tareas"></p>
+            </div>
+          </div>
+          <div class="experiencia__container">
+            <div class="experiencia__col">
+              <p class="experiencia__detalle">2005 - 2008</p>
+              <p class="experiencia__detalle">Buenos Aires, Argentina</p>
+            </div>
+            <div class="experiencia__col">
+              <h4 class="experiencia__empresa">NextPortal</h4>
+              <h5 class="experiencia__cargo">Frontend Developer</h5>
               <p class="experiencia__tareas">Tareas Realizadas:</p>
               <p class="experiencia__tareas">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
